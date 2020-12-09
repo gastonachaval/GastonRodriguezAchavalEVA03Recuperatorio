@@ -90,7 +90,7 @@ public class Recuperatorio {
 		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 6));
 		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 7));		
 	}
-	/*
+	
 	@Test
 	public void queSePuedaPresentarBatallaNaval() throws VehiculoInexistente, VehiculoIncompatible {
 		FuerzaArmada argentina = new FuerzaArmada();
@@ -111,7 +111,7 @@ public class Recuperatorio {
 		assertTrue(argentina.enviarALaBatalla("Pacifico", 12));		
 		assertTrue(argentina.enviarALaBatalla("Pacifico", 13));		
 	}
-
+	
 	@Test (expected = VehiculoIncompatible.class)
 	public void queSeNoSePuedaEnviarAUnaBatallaEnTierraUnBarco() throws VehiculoInexistente, VehiculoIncompatible {
 		FuerzaArmada argentina = new FuerzaArmada();
@@ -139,5 +139,5 @@ public class Recuperatorio {
 		argentina.crearBatalla("San Lorenzo", TipoDeBatalla.TERRESTRE, 100.5, 20.3);
 
 		assertFalse(argentina.enviarALaBatalla("San Lorenzo", 4));
-	}*/
+	}
 }
