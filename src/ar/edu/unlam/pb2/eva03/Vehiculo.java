@@ -32,5 +32,11 @@ public abstract class Vehiculo {
 			return false;
 		return true;
 	}
+
+	public Integer getCodigo() {
+		return codigo;
+	}
+	
+	
 	
 }

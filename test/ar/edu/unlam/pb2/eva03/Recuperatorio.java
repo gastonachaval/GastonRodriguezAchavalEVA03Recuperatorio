@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import ar.edu.unlam.pb2.eva03.enumeradores.TipoDeBatalla;
+
 public class Recuperatorio {
 
 	@Test
@@ -63,7 +65,7 @@ public class Recuperatorio {
 		
 		assertEquals((Integer)12, argentina.getCapacidadDeDefensa());
 	}
-	/*
+	
 	@Test
 	public void queSePuedaCrearUnaBatalla() {
 		FuerzaArmada argentina = new FuerzaArmada();
@@ -88,7 +90,7 @@ public class Recuperatorio {
 		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 6));
 		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 7));		
 	}
-
+	/*
 	@Test
 	public void queSePuedaPresentarBatallaNaval() throws VehiculoInexistente, VehiculoIncompatible {
 		FuerzaArmada argentina = new FuerzaArmada();

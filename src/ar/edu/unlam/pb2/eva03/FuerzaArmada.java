@@ -2,8 +2,11 @@ package ar.edu.unlam.pb2.eva03;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
+import ar.edu.unlam.pb2.eva03.enumeradores.TipoDeBatalla;
 
 public class FuerzaArmada {
 
@@ -22,6 +25,34 @@ public class FuerzaArmada {
 	public Integer getCapacidadDeDefensa() {
 		return convoy.size();
 	}
+
+	public void crearBatalla(String nombre, TipoDeBatalla tipo, Double latitud, Double longitud) {
+		batallas.put(nombre, new Batalla(latitud,longitud,tipo));
+	}
+
+	public Batalla getBatalla(String nombre) {
+		return batallas.get(nombre);
+	}
+
+	public Boolean enviarALaBatalla(String nombreDeLaBatalla, Integer codigoDeVehiculo) throws VehiculoInexistente,VehiculoIncompatible {
+		Vehiculo vehiculoAEnviar=null;
+		for (Iterator<Vehiculo> iterator = convoy.iterator(); iterator.hasNext();) {
+			Vehiculo vehiculo = (Vehiculo) iterator.next();
+			if (vehiculo.getCodigo().equals(codigoDeVehiculo)) {
+				vehiculoAEnviar=vehiculo;
+				break;
+			}
+			else {
+				throw new VehiculoInexistente();
+			}
+		}
+		/*if (batallas.get(nombreDeLaBatalla).getTipo().equals()) {
+			
+		}*/
+		
+		return false;
+	}
+	
 	
 
 }

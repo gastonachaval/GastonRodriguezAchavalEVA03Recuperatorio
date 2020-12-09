@@ -14,5 +14,29 @@ public class Batalla {
 	private Double longitud;
 	private TipoDeBatalla tipo;
 	Set<Vehiculo> vehiculosEnLaBatalla;
+
+	public Batalla(Double latitud, Double longitud, TipoDeBatalla tipo) {
+		super();
+		this.latitud = latitud;
+		this.longitud = longitud;
+		this.tipo = tipo;
+		this.vehiculosEnLaBatalla = new HashSet<Vehiculo>();
+	}
+
+	public Double getLatitud() {
+		return latitud;
+	}
+
+	public Double getLongitud() {
+		return longitud;
+	}
+	public Boolean agregarVehiuculoALaBatalla(Vehiculo vehiculoAAgregar) {
+		return vehiculosEnLaBatalla.add(vehiculoAAgregar);
+	}
+
+	public TipoDeBatalla getTipo() {
+		return tipo;
+	}
 	
+
 }
