@@ -1,5 +1,7 @@
 package ar.edu.unlam.pb2.eva03;
 
+import ar.edu.unlam.pb2.eva03.interfaces.Terrestre;
+
 public class Camion extends Vehiculo implements Terrestre {
 
 	private Double velocidad;

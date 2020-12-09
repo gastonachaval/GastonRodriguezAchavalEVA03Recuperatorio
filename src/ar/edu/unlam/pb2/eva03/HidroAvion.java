@@ -1,5 +1,8 @@
 package ar.edu.unlam.pb2.eva03;
 
+import ar.edu.unlam.pb2.eva03.interfaces.Acuatico;
+import ar.edu.unlam.pb2.eva03.interfaces.Volador;
+
 public class HidroAvion extends Vehiculo implements Volador, Acuatico {
 
 	private Double profundidad;

@@ -1,5 +1,8 @@
 package ar.edu.unlam.pb2.eva03;
 
+import ar.edu.unlam.pb2.eva03.interfaces.Acuatico;
+import ar.edu.unlam.pb2.eva03.interfaces.Terrestre;
+
 public class Anfibio extends Vehiculo implements Acuatico,Terrestre {
 
 	private Double profundidad;
