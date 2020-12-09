@@ -26,7 +26,7 @@ public class Recuperatorio {
 	
 		assertEquals(0.0, submarino.getProfundidad(), 0.01);
 	}
-	/*
+	
 	@Test
 	public void queSePuedaCrearUnObjetoAnfibio() {
 		Anfibio var = new Anfibio(12, "LARC-5");
@@ -63,7 +63,7 @@ public class Recuperatorio {
 		
 		assertEquals((Integer)12, argentina.getCapacidadDeDefensa());
 	}
-	
+	/*
 	@Test
 	public void queSePuedaCrearUnaBatalla() {
 		FuerzaArmada argentina = new FuerzaArmada();
